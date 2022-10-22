@@ -1,0 +1,121 @@
+@import url('./header.css');
+@import url('./humburger.css');
+@import url('./aboutSection.css');
+@import url('./opportunitiesSection.css');
+@import url('./footer.css');
+
+* {
+    color: #000;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__button,
+    .header__menu,
+    .opportunities__connection__block__image,
+    .about__content__image,
+    .service__opportunities__block__image {
+        display: none;
+    }
+
+    .hamburger-menu {
+        visibility: visible;
+    }
+
+    .about__container {
+        justify-content: center;
+        margin: 0;
+        min-height: 300px;
+    }
+
+    .about__content {
+        margin-top: 50px;
+    }
+
+    .opportunities__container__first-section,
+    .opportunities__container__second-section,
+    .opportunities__container__third-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+
+    }
+
+    .chat__opportunities__content {
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .chat__opportunities__text {
+        max-width: 90%;
+    }
+
+    .remind__opportunities__block,
+    .service__opportunities__block {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .remind__opportunities__text {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .remind__opportunities__functions,
+    .service__opportunities__functions {
+        justify-content: center;
+    }
+
+    .remind__opportunities__functions__first,
+    .remind__opportunities__functions__second,
+    .service__opportunities__functions__first,
+    .service__opportunities__functions__second {
+        margin-right: 5px;
+    }
+
+    .look__opportunities__block,
+    .opportunities__connection__support,
+    .opportunities__connection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opportunities__connection__support,
+    .opportunities__connection {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .about__container {
+        text-align: center;
+    }
+
+    .opportunities__relationship__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+}
