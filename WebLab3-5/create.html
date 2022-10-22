@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style/css.css">
+
+    <title>Create paper</title>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <header class="Header">
+            <div class="Header__menu">
+                <div class="Header__menu__logo">My Cinema</div>
+                <nav class="Header__menu_nav">
+                    <a href="./index.html"><span>My films</span></a>
+                    <a href="./create.html"></a><span class="Active">Create film</span></a>
+                </nav>
+            </div>
+        </header>
+        <div class="Create">
+            <div class="Create__box">
+                <h1>Create film</h1>
+                <form class="Form" id="Form">
+                    <label for="titleinput">
+                        <span>Title</span>
+                        <input type="text" class="Create-inputs" placeholder="Type title" id="titleinput">
+                    </label>
+                    <label for="area__desc">
+                        <span>Description</span>
+                        <textarea name="Description"  class="Create-inputs" id="area__desc" cols="30" rows="6" placeholder="Describe this film"></textarea>
+                    </label>
+                    <label for="commentsinput">
+                        <span>Comments</span>
+                        <input type="number" class="Create-inputs" placeholder="Type quantity of comments" id="commentsinput">
+                    </label>
+                    <label for="Duration">
+                        <span>Duration</span>
+                        <input type="number" class="Create-inputs" placeholder="Type some time in minutes" id="Duration">
+                    </label>
+                    <button type="submit" id="submit_button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Js/js.js"></script>
+</body>
+
+</html>

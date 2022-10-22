@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style/css.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body >
+    <div class="Wrapper">
+        <header class="Header">
+            <div class="Header__menu">
+                <div class="Header__menu__logo">My Cinema</div>
+                <nav class="Header__menu_nav">
+                    <a href="./index.html"><span class="Active">My films</span></a>
+                    <a href="./create.html"><span>Create film</span></a>
+                </nav>
+            </div>
+            <div class="Header__input">
+                <input placeholder="Type something..." id="find_input" />
+                <div class="Header__input__btn">
+                    <div class="Header__input__btn__blue" id="find_button">Search</div>
+                    <div class="Header__input__btn__red" id="cancel_find_button">Clear</div>
+                </div>
+            </div>
+        </header>
+        <main class="Main__content">
+            <div class="Side__bar">
+                <div class="Side__bar__top">
+                    <h2>Manage films</h2>
+                    <div class="Side__bar__top__sort">
+                        <span class="sort__txt">Sort by the most commented films</span>
+                        <button id="Sort">Press for sort</button>
+                    </div>
+                </div>
+                <div class="Side__bar__bottom">
+                    <span class="sort__txt">Count total duration:</span>
+                    <div class="Side__bar__bottom__btn" id="Count">Count</div>
+                    <div class="Side__bar__bottom__res">
+                        <p>Total duration in min:</p>
+                        <span id="TotalDuration"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="Create">
+                <div class="Create__box">
+                    <h1>Edit film</h1>
+                    <form>
+                        <label>
+                            <span>Title</span>
+                            <input type="text" placeholder="Type title" id="titleinput">
+                        </label>
+                        <label>
+                            <span>Description</span>
+                            <textarea name="Description" id="area__desc" cols="30" rows="6"
+                                placeholder="Describe this film"></textarea>
+                        </label>
+                        <label>
+                            <span>Comments</span>
+                            <input type="number" placeholder="Type quantity of comments" id="commentsinput">
+                        </label>
+                        <label>
+                            <span>Duration</span>
+                            <input type="number" placeholder="Type some time in minutes" id="Duration">
+                        </label>
+                        <button type="submit" id="submit_button" class="hiddenBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="Content" id="Content">
+
+            </div>
+        </main>
+    </div>
+    <script src="./Js/js.js"></script>
+</body>
+
+</html>

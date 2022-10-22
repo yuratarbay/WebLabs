@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color:#666
+}
+
+.Wrapper {
+    width: 99.8%;
+}
+
+.Header {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.Header__menu {
+    display: flex;
+    width: 22%;
+    margin-right: 53%;
+    align-items: center;
+}
+
+.Header__menu__logo {
+    color: #929292;
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+}
+
+.Header__menu_nav {
+    display: flex;
+    align-items: center;
+}
+
+.Header__menu_nav span {
+    padding: 15px 10px 15px 10px;
+    cursor: pointer;
+}
+
+.Active {
+    background-color: #e0e0e0;
+    color:#666;
+}
+
+.Header__input {
+    display: flex;
+    align-items: center;
+    width: 22%;
+}
+
+.Header__input input {
+    height: 57%;
+    width: 180px;
+    margin-right: 15px;
+    border-radius: 2px;
+    border: 1px solid #929292;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.Header__input__btn {
+    display: flex;
+}
+
+.Header__input__btn div {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Header__input__btn__blue {
+    border: 1px solid blue;
+    color: blue;
+    margin-right: 15px;
+}
+
+.Header__input__btn__blue:hover {
+    background-color: blue;
+    color: white;
+}
+
+.Header__input__btn__red {
+    border: 1px solid red;
+    color: red;
+}
+
+.Header__input__btn__red:hover {
+    color: white;
+    background-color: red;
+}
+
+/**********MainContent***********/
+
+.Main__content {
+    display: flex;
+
+}
+
+.Side__bar {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 200px;
+    border-right: 1px solid #d1d1d1;
+}
+
+.Side__bar h2 {
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.Side__bar__top__sort {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d1d1d1;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.sort__txt {
+    width: 90%;
+    color: #616161;
+    font-weight: 700;
+}
+
+.Side__bar__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.Side__bar__bottom__btn {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 15px 8px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0275d8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Side__bar__bottom__res {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Side__bar__bottom__res p {
+    color: #666;
+}
+
+.Side__bar__bottom__res span {
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+
+/**************Content*************/
+
+.Content {
+    display: flex;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 10px;
+}
+
+.Card {
+    width: 235px;
+    border: 2px solid #d1d1d1;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.Card__content {
+    padding: 10px;
+}
+
+.Card__content span {
+    color: #9f9f9f;
+}
+
+.Card h2 {
+    margin-bottom: 10px;
+}
+
+.Card__description {
+    margin-bottom: 10px;
+    color: #5c5c5c;
+}
+
+.Card__edit__btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.Card__edit__btns div {
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Card__edit__btns__edit {
+    background-color: #5bc0de;
+}
+
+.Card__edit__btns__remove {
+    background-color: #d9534f;
+}
+
+/**************************Create page****************************/
+
+.Create {
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+}
+
+.Create__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Create__box h1 {
+    margin-bottom: 50px;
+}
+
+.Create form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Create label {
+    display: flex;
+    flex-direction: column;
+}
+
+.Create span {
+    margin-bottom: 10px;
+}
+
+.Create input,
+textarea {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    outline: 0px;
+    border: 1px solid #e0e0e0;
+}
+.Create input {
+    width: 235px;
+    height: 30px;
+}
+
+.Create button {
+    margin: 0 auto;
+    width: 240px;
+    padding: 8px 0px 8px 0px;
+    color: white;
+    background-color:#0275d8;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hiddenBtn {
+    visibility: hidden;
+}
+
+#Sort {
+    background-color: #0275d8;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    padding: 5px;
+    font-weight: 700;
+}
